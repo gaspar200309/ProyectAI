@@ -12,7 +12,7 @@ import ingineriaSistemas from './img/ingineriaSistemas.jpg'
 import MyProject from './img/MyProject.png'
 import FondoGraduados from './img/FondoGraduados.jpg'
 import FondoInicio from './img/Fondo.png'
-import Hamburguesa from './img/Hamburguesa.png'
+import Hamburguesa from './img/hamburguesa.png'
 
 
 export default {
