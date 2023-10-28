@@ -1,0 +1,67 @@
+
+.cardB {
+    
+    width: 500px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 10px #033f49;
+    border-radius: 10px;
+    transition: 0.1s;
+    margin: 50px;
+    margin-top: 80px;
+}
+
+.cardB:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px #033f49;
+}
+
+.cardB .img-cardB {
+    width: 200px;
+}
+
+.cardB .img-cardB img{
+   
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.cardB .contentB {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    padding: 10px 15px;
+}
+
+.cardB .contentB .titleB h3 {
+    color: #026e5e;
+}
+
+.cardB .contentB .titleB span {
+    color: #0089ba;
+    font-size: 12px;
+}
+
+.cardB .contentB .textB p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    color: black;
+}
+
+.cardB .contentB .btn-containerB button {
+    background: #0089ba;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cardB .contentB .btn-containerB button:hover {
+    background: #017eac;
+}

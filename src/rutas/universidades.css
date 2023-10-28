@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Contenedor principal */
+.contenedorU {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado y fondo */
+.imgUniversidades {
+    max-width: 100vw;
+    max-height: 50vh; /* Esto establece la altura máxima al 50% de la altura de la ventana */
+    width: auto;
+    height: auto;
+}
+
+/* Texto de introducción */
+.textoU {
+    font-size: 24px;
+    color: #02060a;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 0;
+    padding: 30px;
+}
+
+/* Título "Universidades en Cochabamba" */
+.universidades h2 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(90, 155, 240);
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+
+}
+
+/* Estilos de las tarjetas */
+.container-cardU {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente */
+    max-width: 1100px;
+    margin: auto;
+}
+
+.cardU {
+    width: calc(33.33% - 40px); /* 33.33% para tres columnas, menos el margen */
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: pointer;  
+    background-color: white;
+}
+
+.cardU:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.cardU img {
+    width: 80px;
+    height: 100px;
+  
+    
+}
+
+.contenido-cardU {
+    padding: 15px;
+    text-align: center;
+    background-blend-mode: color;
+    background-color: #fff;
+}
+
+.contenido-cardU h3 {
+    margin-bottom: 20px;
+    color: #114ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.contenido-cardU p {
+    line-height: 1.8;
+    color: #221d1d;
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido-cardU a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido-cardU a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+.enlaceU {
+    text-decoration: none;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .container-cardU {
+        width: 100%; /* Estirar tarjetas al ancho completo en dispositivos pequeños */
+    }
+
+    .cardU {
+        width: calc(100% - 40px); /* Una sola columna en dispositivos móviles */
+    }
+}
