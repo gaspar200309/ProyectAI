@@ -29,7 +29,7 @@ import Upal from './img/Upal.png'
 import Esfm from './img/Esfm.png'
 
 //Institutos
-import Sayarinapaj from './img/sayarinapaj.png'
+import Sayarinapaj from './img/Sayarinapaj.png'
 import Itic from './img/Itic.png'
 import Itmac from './img/Itmac.png'
 import Itpab from './img/Itpab.png'
