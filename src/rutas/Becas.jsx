@@ -1,28 +1,35 @@
-import React from 'react';
-import ImagenesApp from '../assets/ImagenesApp';
-import './Becas.css'; // Asegúrate de reemplazar 'nombre-de-tu-archivo' con el nombre real de tu archivo CSS.
+import React from "react";
+import becasData from "./BecasApp";
+import "./Becas.css";
 
-export const Becas = () => {
+
+
+
+const Becas = () => {
   return (
     <>
-        <h1>Becas</h1>
-        <div className="cardB">
-            <div className="img-cardB">
-                <img src={ImagenesApp.imgComunicacion} alt="" />
+      <h1 className="becas">Becas</h1>
+      {becasData.map((beca) => (
+        <div className="cardB" key={beca.id}>
+          <div className="img-cardB">
+            <img src={beca.imgSrc} alt="" height="250px" width="300px" />
+          </div>
+          <div className="contentB">
+            <div className="titleB">
+              <h3>{beca.universidad}</h3>
+              <span>{beca.dato}</span>
             </div>
-            <div className="contentB">
-                <div className="titleB">
-                    <h3>Universidad mayor de san simon</h3>
-                    <span>hace un dia</span>
-                </div>
-                <div className="textB">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint doloribus eos, iste ab, at aspernatur enim quaerat veritatis veniam beatae. Nam deserunt officiis numquam?</p>
-                </div>
-                <div className="btn-containerB">
-                    <button>Visitar</button>
-                </div>
+            <div className="textB">
+              <p>{beca.descripcion}</p>
             </div>
+            {/* <div className="btn-containerB">
+              <button>Visitar</button>
+            </div> */}
+          </div>
         </div>
+      ))}
     </>
   );
 };
+
+export default Becas;

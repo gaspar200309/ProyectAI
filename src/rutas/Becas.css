@@ -1,58 +1,56 @@
 
 .cardB {
-    
-    width: 500px;
-    height: 250px;
+    width: 100%;
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center; 
     background: #fff;
-    box-shadow: 0 5px 10px #033f49;
+    box-shadow: 0 1px 5px 5px #033f49;
     border-radius: 10px;
     transition: 0.1s;
-    margin: 50px;
-    margin-top: 80px;
+    margin: 20px auto;
+    max-width: 413px; 
+    overflow: hidden;
+  }
+.contenedorB {
+  display: grid;
+
 }
 
-.cardB:hover {
+  .img-cardB img {
+    margin-top: 10px;
+    border-radius: 2%;
+  }
+  
+  .cardB:hover {
     transform: scale(1.02);
     box-shadow: 0 5px 20px #033f49;
-}
-
-.cardB .img-cardB {
-    width: 200px;
-}
-
-.cardB .img-cardB img{
-   
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-
-.cardB .contentB {
-    width: 60%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 50px 150px 50px;
+  }
+  
+  .cardB .contentB {
     padding: 10px 15px;
-}
-
-.cardB .contentB .titleB h3 {
+  }
+  
+  .cardB .contentB .titleB h3 {
+    justify-content: center;
+    text-align: center;
     color: #026e5e;
-}
-
-.cardB .contentB .titleB span {
+  }
+  
+  .cardB .contentB .titleB span {
     color: #0089ba;
     font-size: 12px;
-}
-
-.cardB .contentB .textB p {
+  }
+  
+  .cardB .contentB .textB p {
     color: rgba(0, 0, 0, 0.6);
     font-size: 15px;
     color: black;
-}
-
-.cardB .contentB .btn-containerB button {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .cardB .contentB .btn-containerB button {
     background: #0089ba;
     padding: 5px 10px;
     color: #fff;
@@ -60,8 +58,51 @@
     outline: none;
     border: none;
     cursor: pointer;
-}
+    
+  }
 
-.cardB .contentB .btn-containerB button:hover {
+  .btn-containerB button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .becas {
+    margin-top: 90px;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  
+  .cardB .contentB .btn-containerB button:hover {
     background: #017eac;
-}
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .cardB {
+      flex-direction: column; 
+      max-width: 100%; 
+      margin: 10px auto; 
+      margin-top: 40px;
+    }
+  
+    .cardB .img-cardB {
+      width: 100%;
+    }
+  
+    .cardB .img-cardB img {
+      width: 100%;
+      height: auto;
+      background-size: cover;
+    }
+  
+    .cardB .contentB {
+      width: 100%;
+    }
+  
+    .cardB .contentB .titleB {
+      margin-top: 10px; 
+    }
+  }

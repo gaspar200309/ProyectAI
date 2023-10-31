@@ -1,34 +1,44 @@
 import React, { useState } from 'react';
-import servicios from '../Carreras/CarreraApp'; // Asegúrate de importar servicios desde el archivo adecuado
+import servicios from '../Carreras/CarreraApp'; 
 
 const Buscador = ({ updateFilteredCarreras }) => {
   const [search, setSearch] = useState('');
 
-  const showData2 = () => {
-    // Filtrar las carreras basadas en la búsqueda
+  const normalizeString = (str) => {
+    return str
+      .normalize("NFD") // Normaliza los caracteres con diacríticos
+      .replace(/[\u0300-\u036f]/g, "") // Elimina los diacríticos
+      .toLowerCase(); // Convierte a minúsculas
+  };
+
+  const showData = () => {
+    const normalizedSearch = normalizeString(search);
     const filteredCarreras = servicios.filter((carrera) =>
-      carrera.titulo.toLowerCase().includes(search.toLowerCase())
+      normalizeString(carrera.titulo).includes(normalizedSearch)
     );
 
-    // Llama a la función para actualizar las carreras filtradas en Carrera
     updateFilteredCarreras(filteredCarreras);
   };
 
   const searcher = (e) => {
     setSearch(e.target.value);
-    showData2(); // Llama a showData2 al cambiar la búsqueda
+  };
+
+  const handleSearch = () => {
+    showData();
   };
 
   return (
-    <>
+    <div className="search-container">
       <input
         value={search}
         onChange={searcher}
         type="text"
-        placeholder="Search"
-        className="Si"
+        placeholder="Buscar Carreras"
+        className="search-input"
       ></input>
-    </>
+      <button onClick={handleSearch} className="search-button">Buscar</button>
+    </div>
   );
 };
 
