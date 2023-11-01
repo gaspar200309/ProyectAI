@@ -70,7 +70,7 @@ const InformacionCarreras = () => {
                             <a
                                 key={index}
                                 href={universidad.enlace}>
-                                {universidad.nombre}
+                                -{universidad.nombre}
                             </a>
                         ))}
                     </div>

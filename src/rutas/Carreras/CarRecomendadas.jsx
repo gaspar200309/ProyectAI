@@ -50,7 +50,7 @@ const Carrera = () => {
             ))}
           </div>
         </div>
-        <Link to =  '/carrera'>Mas carreras</Link>
+        <Link to =  '/carrera' className="carRecomend center-button">Ver mas carreras...</Link>
       </div>
     </>
   );

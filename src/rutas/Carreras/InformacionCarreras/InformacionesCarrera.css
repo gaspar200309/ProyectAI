@@ -45,7 +45,7 @@
     font-size: 15px;
 }
 .navigation-barC a {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
 
 }
@@ -53,7 +53,7 @@
     display: flex;
     text-decoration: none;
     color: brown;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
 
 }
@@ -107,3 +107,56 @@
     text-decoration: none;
     margin-right: 10px; 
 }
+/* Estilos para pantallas más pequeñas (dispositivos móviles) */
+@media screen and (max-width: 600px) {
+    .containerC {
+      padding: 10px; /* Reduce el relleno en pantallas más pequeñas */
+    }
+  
+    .containerC h1 {
+      font-size: 2rem; /* Reduzca el tamaño de la fuente del encabezado principal */
+      margin-bottom: 10px;
+    }
+  
+    .containerC h2 {
+      font-size: 1.5rem; /* Reduzca el tamaño de la fuente del encabezado secundario */
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  
+    .containerC p {
+      font-size: 16px; /* Reduzca el tamaño de la fuente del párrafo */
+      margin-bottom: 5px;
+    }
+  
+    .containerC ul {
+      margin-left: 10px; /* Reduzca el margen izquierdo de las listas */
+    }
+  
+    .containerC li {
+      font-size: 1rem; /* Reduzca el tamaño de la fuente de los elementos de lista */
+      margin-bottom: 5px;
+    }
+  
+    .navigation-barC {
+      padding: 5px;
+    }
+  
+    .navigation-barC a {
+        font-size: 18px;
+      margin: 5px 0; 
+    }
+  
+    .image-containerC img {
+      height: auto; 
+      margin-top: 30px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 601px) {
+    .containerC {
+      max-width: 1200px; 
+    }
+  }
+  

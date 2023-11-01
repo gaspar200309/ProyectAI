@@ -161,7 +161,7 @@ color: var(--blanco);
 .navbar .menu-hamburger {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 28px;
   right: 50px;
   width: 35px;
 }
@@ -201,7 +201,7 @@ color: var(--blanco);
 
   .navbar .logo {
       position: absolute;
-      top: 40px;
+      top: 10px;
       left: 30px;
   }
 
@@ -232,6 +232,7 @@ color: var(--blanco);
       display: flex;
       flex-direction: column;
       align-items: center;
+      /* margin-top: 80px; */
   }
 
   .navbar .nav-links ul li {
@@ -250,57 +251,50 @@ a.active {
 
 
 
-/*seccion sobre nosotros*/
-.nosotros h2{
+/* Estilos base para dispositivos móviles */
+.nosotros h2 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.5rem;
   padding: 6px;
   color: #e7302a;
-  font-family:'Montserrat' sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-@media(min-width: 768px) {
-  .nosotros h2{
-      font-size: 5rem;
-  }
-}
-.contenido-nosotros{
-  background-image: url(assets/img/eco.jpg);
+
+.contenido-nosotros {
   display: grid;
-  grid-template-rows: repeat(2,1fr);
-  background-size: cover;
-  background-position: center center;
+  grid-template-columns: 1fr;
+  /* Ajusta el número de columnas según tus necesidades en dispositivos móviles */
 }
 
-@media(min-width: 768px) {
-  .contenido-nosotros{
-      grid-template-columns:repeat(2,1fr);
-      /* background-attachment: fixed; */
-  }
-}
-
-.texto-nosotros{
+.texto-nosotros {
   padding: 2rem;
-  grid-row: 2/3;
   background-color: var(--blanco);
 }
 
-@media(min-width: 768px) {
-  .texto-nosotros{
-      padding:5rem;
-  }
-}
-
-
-
-.texto-nosotros p{
-  font-size: 2.2rem;
+.texto-nosotros p {
+  font-size: 1.6rem;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-@media(min-width: 768px) {
-  .texto-nosotros p{
-      text-align: left;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+/* Estilos para pantallas más grandes (min-width: 768px) */
+@media (min-width: 768px) {
+  .nosotros h2 {
+    font-size: 4rem;
+  }
+
+  .contenido-nosotros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .texto-nosotros {
+    padding: 5rem;
+    grid-row: 2/3;
+  }
+
+  .texto-nosotros p {
+    text-align: left;
+    font-size: 2.2rem;
   }
 }
 
@@ -323,6 +317,7 @@ a.active {
 	color: #e7302a;
   font-size: 50px;
 }
+
 .card {
   width: calc(33.33% - 40px);
   margin: 20px;
@@ -385,12 +380,36 @@ a.active {
   .card {
     width: calc(50% - 40px); 
   }
+  .title-cards h2{
+    margin-top: 70px;
+    padding: 10px;
+  }
 
   @media only screen and (max-width: 480px) {
     .card {
       width: calc(100% - 40px); 
     }
   }
+}
+
+.carRecomend {
+  display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+  background-color: #812110;
+	color: #fff;
+	border: 1px solid #812110;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.center-button {
+  display: block;
+  width: 200px; 
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px; 
 }
 
 /*formulario contacto*/
@@ -503,7 +522,7 @@ a.active {
   padding: .5rem 2rem;
   font-size: 1.8rem;
   border-radius: 0;
-  background-color: #007bff;
+  background-color: #892a19;
 }
 .footer{
   text-align: center;
@@ -550,11 +569,7 @@ a.active {
   justify-content: center;
 
 }
-@media(min-width: 768px) {
-  .informacion-contacto{
-      height: 70vh;
-  }
-}
+
 .informacion-contacto::before{
   content: '';
   position: absolute;
@@ -579,9 +594,21 @@ a.active {
   padding: 5rem;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 75vh;
   justify-content: center;
   background-color: #49251e;
+}
+
+@media(min-width: 768px) {
+  .informacion-contacto{
+      height: 75vh;
+  }
+}
+
+@media(max-width:768px){
+  .formulario-contacto{
+    height: 100vh;
+  }
 }
 
 .input-contacto label{
@@ -648,7 +675,7 @@ a.active {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #9e3636;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   width: 300px;
   outline: none;
 }
@@ -660,8 +687,8 @@ a.active {
   background-color: #852e2e;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  padding: 12px 20px;
   cursor: pointer;
   font-size: 16px;
 }

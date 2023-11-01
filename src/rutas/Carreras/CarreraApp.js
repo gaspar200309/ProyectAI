@@ -1752,7 +1752,7 @@ const servicios = [
   },
   {
     idCar: 136,
-    imgSrc: ImagenesApp.imgAntropologia,
+    imgSrc: ImagenesApp.imgAmbiental,
     titulo: "Ingeniería Ambiental",
     descripcion:
       "Se encarga del diseño de marcas, editoriales  y de la imagen corporativa de empresas, asi mismo diseña escenografiás, stands,  vidrierias, etc. Desarrolla animaciones tradicionales e interactivas y audiovisuales, proyectos de multimedia, redes y plataformas web.",
@@ -1788,7 +1788,7 @@ const servicios = [
   },
   {
     idCar: 137,
-    imgSrc: ImagenesApp.imgAntropologia,
+    imgSrc: ImagenesApp.imgAgronomia,
     titulo: "Ingeniería Agronómica",
     descripcion:
       "Se encarga del diseño de marcas, editoriales  y de la imagen corporativa de empresas, asi mismo diseña escenografiás, stands,  vidrierias, etc. Desarrolla animaciones tradicionales e interactivas y audiovisuales, proyectos de multimedia, redes y plataformas web.",
@@ -1816,7 +1816,7 @@ const servicios = [
   },
   {
     idCar: 138,
-    imgSrc: ImagenesApp.imgAntropologia,
+    imgSrc: ImagenesApp.imgAgricola,
     titulo: "Ingeníeria Agrícola",
     descripcion:
       "Se encarga del diseño de marcas, editoriales  y de la imagen corporativa de empresas, asi mismo diseña escenografiás, stands,  vidrierias, etc. Desarrolla animaciones tradicionales e interactivas y audiovisuales, proyectos de multimedia, redes y plataformas web.",
@@ -1843,7 +1843,7 @@ const servicios = [
   },
   {
     idCar: 139,
-    imgSrc: ImagenesApp.imgAntropologia,
+    imgSrc: ImagenesApp.imgForestal,
     titulo: "Ingeniería Forestal",
     descripcion:
       "Se encarga del diseño de marcas, editoriales  y de la imagen corporativa de empresas, asi mismo diseña escenografiás, stands,  vidrierias, etc. Desarrolla animaciones tradicionales e interactivas y audiovisuales, proyectos de multimedia, redes y plataformas web.",
@@ -1871,7 +1871,7 @@ const servicios = [
   },
   {
     idCar: 140,
-    imgSrc: ImagenesApp.imgAntropologia,
+    imgSrc: ImagenesApp.imgAgroindustrial,
     titulo: "Ingeniería Agroindustrial",
     descripcion:
       "Se encarga del diseño de marcas, editoriales  y de la imagen corporativa de empresas, asi mismo diseña escenografiás, stands,  vidrierias, etc. Desarrolla animaciones tradicionales e interactivas y audiovisuales, proyectos de multimedia, redes y plataformas web.",
@@ -1902,7 +1902,7 @@ const servicios = [
   },
   {
     idCar: 141,
-    imgSrc: ImagenesApp.imgAntropologia,
+    imgSrc: ImagenesApp.imgPetrolera,
     titulo: "Ingeniería Petrolera",
     descripcion:
       "Se encarga del diseño de marcas, editoriales  y de la imagen corporativa de empresas, asi mismo diseña escenografiás, stands,  vidrierias, etc. Desarrolla animaciones tradicionales e interactivas y audiovisuales, proyectos de multimedia, redes y plataformas web.",

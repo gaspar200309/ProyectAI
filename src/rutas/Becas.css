@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: center; 
     background: #fff;
-    box-shadow: 0 1px 5px 5px #033f49;
+    box-shadow: 0 1px 5px 5px #855f59;
     border-radius: 10px;
     transition: 0.1s;
     margin: 20px auto;
@@ -24,7 +24,7 @@
   
   .cardB:hover {
     transform: scale(1.02);
-    box-shadow: 0 5px 20px #033f49;
+    box-shadow: 0 5px 20px #855f59;
   }
   
   .cardB .contentB {
@@ -69,9 +69,9 @@
   
   .becas {
     margin-top: 90px;
-    justify-content: center;
     text-align: center;
     font-size: 40px;
+    color: #c64c36;
   }
   
   

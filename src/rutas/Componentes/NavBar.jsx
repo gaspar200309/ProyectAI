@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import ImagenesApp from '../../assets/ImagenesApp';
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,8 +17,8 @@ export const NavBar = () => {
   return (
     <header>
       <nav className="navbar">
-        <a href="#" className="logo">
-          AV
+        <a href="/" className="logo">
+         <img src={ImagenesApp.imgLogo} height='40px'  width='100%'></img> 
         </a>
         <div className={`nav-links ${menuOpen ? 'mobile-menu' : ''}`}>
           <ul>
