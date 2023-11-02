@@ -7,16 +7,16 @@ export const PieDePagina = () => {
                 <div className="contenedor-piepagina contenedor">
                     <div className="info">
                         <h3>Dirección</h3>
-                        <p>23.Cochabamba Bolvia 75012</p>
+                        <p>C. Luis Castell N° 1900. <br></br>Frente al parque Teleferico-CBBA</p>
                     </div>
                     <div className="info">
                         <h3>Días de atencion</h3>
-                        <p>Lunes a Jueves 8am - 18pm</p>
-                        <p>+591 62982552</p>
+                        <p>Lunes a Viernes</p>
+                        <p>+591 60375040</p>
                     </div>
                     <div className="info">
-                        <h3>Horarios</h3>
-                        <p>Lunes - Domingo 7am - 11pm</p>
+                        <h3>Horarios de atencion</h3>
+                        <p>08:30am - 18:30pm</p>
                         <div className ="redes-sociales redes-pie">
                             <i className="fab fa-facebook-square"></i>
                             <i className="fab fa-twitter-square"></i>

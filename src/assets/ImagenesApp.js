@@ -88,6 +88,12 @@ import telecomunicaciones from './img/CarrerasImg/telecomunicaciones.jpg'
 import trabajoSocial from './img/CarrerasImg/trabajoSocial.jpg'
 import turismo from './img/CarrerasImg/turismo.jpg'
 import veterinaria from './img/CarrerasImg/veterinaria.jpg'
+import UPBbecas from './img/UPBbecas.jpg'
+import UCBbecas from './img/UCBbecas.png'
+import PatinioBecas from './img/patinioBeca.png'
+import UnitepcBeca from './img/UnitepcBeca.png'
+import EmiBeca from './img/EmiBeca.jpg'
+
 
 
 export default {
@@ -101,8 +107,14 @@ export default {
   "imgFondosParaPaginasWeb": fondosParaPaginasWeb,
   "imgInginieriaCivil": ingenieriaDemandaCivil,
   "imgInginieriaSistemas": ingineriaSistemas,
-
   "imgFondo2": FondoGraduados,
+  //Becas
+  "imgUPBBecas": UPBbecas,
+  "imgUCBbecas": UCBbecas,
+  "imgPatino": PatinioBecas,
+  "imgUnitepcBecas": UnitepcBeca,
+  "imgEmiBecas": EmiBeca,
+
 
   //Universidades
   "imgEscudo": escudo,

@@ -11,7 +11,7 @@ const becasData = [
     },
     {
       id: 52,
-      imgSrc: ImagenesApp.imgFondo,
+      imgSrc: ImagenesApp.imgUnitepcBecas,
       universidad: "UNITEPC (Universidad Técnica Pv. Cosmos)",
       dato: "Privada",
       descripcion:
@@ -19,7 +19,7 @@ const becasData = [
     },
     {
       id: 53,
-      imgSrc: ImagenesApp.imgFondo,
+      imgSrc: ImagenesApp.imgUCBbecas,
       universidad: "UCB (Universidad Católica Boliviana)",
       dato: "Privada",
       descripcion:
@@ -27,7 +27,7 @@ const becasData = [
     },
     {
       id: 54,
-      imgSrc: ImagenesApp.imgFondo,
+      imgSrc: ImagenesApp.imgPatino,
       universidad: "USIP (Universidad Simón I. Patiño)",
       dato: "Privada",
       descripcion:
@@ -35,7 +35,7 @@ const becasData = [
     },
     {
       id: 55,
-      imgSrc: ImagenesApp.imgFondo,
+      imgSrc: ImagenesApp.imgEmiBecas,
       universidad: "EMI (Escuela Militar de Ingeniería)",
       dato: "Privada",
       descripcion:
@@ -43,7 +43,7 @@ const becasData = [
     },
     {
         id: 56,
-        imgSrc: ImagenesApp.imgFondo,
+        imgSrc: ImagenesApp.imgUPBBecas,
         universidad: "UPB (Universidad Privada Boliviana)",
         dato: "Privada",
         descripcion:

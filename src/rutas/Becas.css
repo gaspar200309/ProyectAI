@@ -34,11 +34,11 @@
   .cardB .contentB .titleB h3 {
     justify-content: center;
     text-align: center;
-    color: #026e5e;
+    color: #e63e24;
   }
   
   .cardB .contentB .titleB span {
-    color: #0089ba;
+    color: #ff0000;
     font-size: 12px;
   }
   
