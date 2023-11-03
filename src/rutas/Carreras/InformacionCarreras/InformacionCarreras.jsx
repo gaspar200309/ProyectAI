@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import CarreraApp from "../CarreraApp";
 import "./InformacionesCarrera.css";
@@ -16,6 +16,10 @@ const InformacionCarreras = () => {
             </div>
         );
     }
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
@@ -49,7 +53,7 @@ const InformacionCarreras = () => {
                     </div>
 
                     <div className="contenidoC">
-                        <h2>Áreas de trabajo de los {carreraSelect.titulo}s</h2>
+                        <h2>Áreas de trabajo de la carrera: {carreraSelect.titulo}</h2>
                         <ul>
                             {carreraSelect.lugaresDeTrabajo.map((area, index) => (
                                 <li key={index}>{area}</li>
@@ -63,6 +67,9 @@ const InformacionCarreras = () => {
                                 <li key={index}>{materia}</li>
                             ))}
                         </ul>
+                    </div>
+                    <div className="recomendacionesCar">
+                        <h2>Carreres similares</h2>
                     </div>
                     <div className="enlacesC">
                         <h2>Universidades para Estudiar {carreraSelect.titulo}</h2>

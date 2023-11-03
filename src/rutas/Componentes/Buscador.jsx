@@ -8,7 +8,8 @@ const Buscador = ({ updateFilteredCarreras }) => {
     return str
       .normalize("NFD") // Normaliza los caracteres con diacríticos
       .replace(/[\u0300-\u036f]/g, "") // Elimina los diacríticos
-      .toLowerCase(); // Convierte a minúsculas
+      .toLowerCase() // Convierte a minúsculas
+      .trim(); // Elimina los espacio de los extremos
   };
 
   const showData = () => {

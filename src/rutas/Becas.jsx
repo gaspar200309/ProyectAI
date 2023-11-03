@@ -6,6 +6,7 @@ import "./Becas.css";
 
 
 const Becas = () => {
+  
   return (
     <>
       <h1 className="becas">Becas</h1>
