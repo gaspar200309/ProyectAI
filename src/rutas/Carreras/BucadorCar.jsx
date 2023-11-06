@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Buscador from "../Componentes/Buscador";
+import ScrollToTop from "../Componentes/Scrooll";
 
 const Carrera = () => {
   const [filteredCarreras, setFilteredCarreras] = useState([]);
@@ -18,12 +19,10 @@ const Carrera = () => {
     areas[carrera.area].push(carrera);
   });
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <>
+      <ScrollToTop></ScrollToTop>
       <div>
         <div className="title-cards">
           <h2>Carreras</h2>

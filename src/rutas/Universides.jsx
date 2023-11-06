@@ -2,6 +2,7 @@ import React from "react";
 import "./universidades.css";
 import ImagenesApp from "../assets/ImagenesApp";
 import universidadesData from "./UniversidadesApp";
+import ScrollToTop from "./Componentes/Scrooll";
 
 
 const Universidades = () => {
@@ -17,6 +18,7 @@ const Universidades = () => {
 
   return (
     <>
+    <ScrollToTop></ScrollToTop>
       <div className="contenedorU">
         <div className="encabezadoU">
           <div className="imgUniversidades">

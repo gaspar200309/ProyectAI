@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import CarreraApp from "../CarreraApp";
 import "./InformacionesCarrera.css";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../../Componentes/Scrooll";
 
 const InformacionCarreras = () => {
     let { idCar } = useParams();
@@ -16,13 +17,10 @@ const InformacionCarreras = () => {
             </div>
         );
     }
-    
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
 
     return (
         <>
+            <ScrollToTop></ScrollToTop>
             <header>
                 <div className="headerC">
                     <div className="image-containerC">
@@ -68,15 +66,12 @@ const InformacionCarreras = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="recomendacionesCar">
-                        <h2>Carreres similares</h2>
-                    </div>
                     <div className="enlacesC">
                         <h2>Universidades para Estudiar {carreraSelect.titulo}</h2>
                         {carreraSelect.universidades.map((universidad, index) => (
                             <a
                                 key={index}
-                                href={universidad.enlace}>
+                                href={universidad.enlace} target="blank">
                                 -{universidad.nombre}
                             </a>
                         ))}

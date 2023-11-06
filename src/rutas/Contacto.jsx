@@ -1,10 +1,12 @@
 import React from 'react';
+import ScrollToTop from './Componentes/Scrooll';
 
 export const Contacto = () => {
 
   return (
     <>
       <section className="contacto" id="contacto">
+       <ScrollToTop></ScrollToTop>
         <h2>Contactanos</h2>
         <p>En caso de requerir mayor información sobre admisiones, fechas, entre otros, no dudes en consultar.</p>
         <div className="contenido-contacto">
@@ -33,6 +35,10 @@ export const Contacto = () => {
             <div className="input-contacto">
               <input type="submit" value="Enviar" className="btnC" />
             </div>
+            <input type="hidden" name="_next" value="http://localhost:5173/"></input>
+            <input type="hidden" name="_captcha" value="false"></input>
+            <input type="hidden" name="_template" value="box"></input>
+
           </form>
         </div>
       </section>

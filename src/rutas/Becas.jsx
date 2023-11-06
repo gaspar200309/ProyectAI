@@ -1,6 +1,7 @@
 import React from "react";
 import becasData from "./BecasApp";
 import "./Becas.css";
+import ScrollToTop from "./Componentes/Scrooll";
 
 
 
@@ -9,6 +10,7 @@ const Becas = () => {
   
   return (
     <>
+    <ScrollToTop></ScrollToTop>
       <h1 className="becas">Becas</h1>
       {becasData.map((beca) => (
         <div className="cardB" key={beca.id}>
