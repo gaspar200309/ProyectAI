@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import servicios from '../Carreras/CarreraApp'; 
+import './EstilosBuscador.css'
 
 const Buscador = ({ updateFilteredCarreras }) => {
   const [search, setSearch] = useState('');
 
   const normalizeString = (str) => {
     return str
-      .normalize("NFD") // Normaliza los caracteres con diacríticos
-      .replace(/[\u0300-\u036f]/g, "") // Elimina los diacríticos
-      .toLowerCase() // Convierte a minúsculas
-      .trim();// elimina los espacios al extremos
+      .normalize("NFD") 
+      .replace(/[\u0300-\u036f]/g, "") 
+      .toLowerCase() 
+      .trim();
   };
 
   const showData = () => {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Buscador from "../Componentes/Buscador";
 import ScrollToTop from "../Componentes/Scrooll";
+import './EstilosCar.css'
 
 const Carrera = () => {
   const [filteredCarreras, setFilteredCarreras] = useState([]);
@@ -40,7 +41,6 @@ const Carrera = () => {
                   </figure>
                   <div className="contenido-card">
                     <h3>{carrera.titulo}</h3>
-                    <p>{carrera.descripcion}</p>
                     <Link to={`/carrera/${carrera.idCar}`}>Leer Más</Link>
                   </div>
                 </div>

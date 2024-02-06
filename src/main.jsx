@@ -5,6 +5,7 @@ import './index.css';
 import { App2 } from './App';
 import { PieDePagina } from './rutas/Componentes/PieDePagina';
 
+
 const root = createRoot(document.getElementById('root'));
 
 root.render(
@@ -12,7 +13,6 @@ root.render(
     <React.StrictMode>
       <App2></App2>
       <PieDePagina></PieDePagina>
-      
     </React.StrictMode>
   </BrowserRouter>
 );

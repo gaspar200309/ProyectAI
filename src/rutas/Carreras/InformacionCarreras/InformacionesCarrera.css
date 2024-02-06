@@ -50,7 +50,7 @@
 
 }
 .enlacesC a {
-    display: flex;
+    display: table;
     text-decoration: none;
     color: brown;
     font-size: 20px;
@@ -107,6 +107,15 @@
     text-decoration: none;
     margin-right: 10px; 
 }
+
+.imgCarL {
+  height: 30px;
+  width: 40px;
+  padding: 3px;
+  margin-right: 20px;
+  margin-top: 10px
+ }
+ 
 /* Estilos para pantallas más pequeñas (dispositivos móviles) */
 @media screen and (max-width: 600px) {
     .containerC {
@@ -145,6 +154,8 @@
     .navigation-barC a {
         font-size: 18px;
       margin: 5px 0; 
+      padding-left: 20px;
+      padding-right: 20px;
     }
   
     .image-containerC img {

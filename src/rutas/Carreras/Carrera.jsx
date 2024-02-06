@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CarreraApp from './CarreraApp'
 import BuscadorCar from './BucadorCar'
+import './EstilosCar.css' 
 
 const Carrera = () => {
 
@@ -24,12 +25,11 @@ const Carrera = () => {
             <div className="container-card">
               {carrerasEnArea.map((carrera) => (
                 <div className="card" key={carrera.idCar}>
-                  <figure>
-                    <img src={carrera.imgSrc} alt={carrera.descripcion} />
+                <figure>
+                    <img  className = "mejorarImg" src={carrera.imgSrc} alt={carrera.descripcion} />
                   </figure>
                   <div className="contenido-card">
-                    <h3>{carrera.titulo}</h3>
-                    <p>{carrera.descripcion}</p>
+                  <h3>{carrera.titulo}</h3>
                     <Link to={`/carrera/${carrera.idCar}`}>Leer Más</Link>
                   </div>
                 </div>

@@ -15,11 +15,11 @@ const ScrollToTop = () => {
 
   return (
     <>
-      {loading && <div class="loading">
+      {loading && <div className="loading">
   <span></span>
   <span></span>
   <span></span>
-  <span></span>
+  <span></span>¿
   <span></span>
 </div>}
     </>

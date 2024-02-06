@@ -1,9 +1,9 @@
 import React from 'react'
-import CarRecomendada from './Carreras/CarRecomendadas'
-import UniversidadesRecomendadas from './UniversidadesRecomendadas'
-import { Contacto } from './Contacto'
-import { Informacion } from './Componentes/Informacion'
-import ImagenesApp from '../assets/ImagenesApp'
+import CarRecomendada from '../Carreras/CarRecomendadas'
+import UniversidadesRecomendadas from '../Carreras/CarRecomendadas'
+import { Contacto } from '../Contacto/Contacto'
+import { Informacion } from '../Componentes/Informacion'
+import ImagenesApp from '../../assets/ImagenesApp'
 
 export const Inicio = () => {
   return (

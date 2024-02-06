@@ -51,8 +51,9 @@ const servicios = [
         enlace: "http://unicen.edu.bo/",
       },
       {
-        nombre: "UMSS",
+        nombre: "UMSS (Universidad Mayor de San Simón)",
         enlace: "https://www.umss.edu.bo/",
+        logo: ImagenesApp.imgEscudo,
       },
       {
         nombre: "UDABOL",
@@ -108,6 +109,7 @@ const servicios = [
       {
         nombre: "UMSS",
         enlace: "https://www.umss.edu.bo/",
+        logo: ImagenesApp.imgEscudo,
       },
       {
         nombre: "UDABOL",
@@ -165,6 +167,7 @@ const servicios = [
       {
         nombre: "UMSS",
         enlace: "https://www.umss.edu.bo/",
+        logo: ImagenesApp.imgEscudo,
       },
       {
         nombre: "Univalle",
@@ -222,6 +225,7 @@ const servicios = [
       {
         nombre: "UMSS",
         enlace: "https://www.umss.edu.bo/",
+        logo: ImagenesApp.imgEscudo,
       },
       {
         nombre: "UDABOL",
@@ -284,6 +288,7 @@ const servicios = [
       {
         nombre: "UMSS",
         enlace: "https://www.umss.edu.bo/",
+        logo: ImagenesApp.imgEscudo,
       },
       {
         nombre: "UCB",
@@ -346,6 +351,7 @@ const servicios = [
       {
         nombre: "UMSS",
         enlace: "https://www.umss.edu.bo/",
+        logo: ImagenesApp.imgEscudo,
       },
     ],
   },
@@ -383,114 +389,87 @@ const servicios = [
       {
         nombre: "UMSS (Universidad Mayor de San Simón)",
         enlace: "https://www.umss.edu.bo/",
+        logo: ImagenesApp.imgEscudo,
       },
       {
         nombre: "EMI (Escuela Militar de Ingeniería)",
         enlace: "https://www.emi.edu.bo/",
+        logo: ImagenesApp.imgEmi,
       },
       {
         nombre: "USIP (Universidad Simón I. Patiño)",
         enlace: "https://usip.edu.bo/",
+        logo: ImagenesApp.imgUsip
       },
       {
         nombre: "Unicen",
         enlace: "http://unicen.edu.bo/",
+        logo: ImagenesApp.imgUnicen
       },
       {
         nombre: "UPB (Universidad Privada Boliviana)",
         enlace: "https://www.upb.edu/",
+        logo: ImagenesApp.imgUPB,
       },
       {
         nombre: "UCB (Universidad Católica Boliviana)",
         enlace: "https://www.ucb.edu.bo/",
+        logo: ImagenesApp.imgCatolica
       },
       {
         nombre: "UCATEC (Univ. Privada de Cs. Administrativas y Tecnológicas)",
         enlace: "https://ucatec.edu.bo/",
+        logo: ImagenesApp.imgUcatec
       },
       {
         nombre: "UPDS (Universidad Privada Domingo Savio)",
         enlace: "https://www.upds.edu.bo/",
+        logo: ImagenesApp.imgDomingoSavio
       },
       {
         nombre: "UDABOL (Universidad de Aquino de Bolivia)",
         enlace: "https://www.udabol.edu.bo/",
+        logo: ImagenesApp.imgUdabol
       },
       {
         nombre: "UNIVALLE (Universidad Privada del Valle)",
         enlace: "https://www.univalle.edu/",
+        logo: ImagenesApp.imgUnivalle
       },
       {
         nombre: "UNIFRANZ (Universidad Franz Tamayo)",
         enlace: "https://unifranz.edu.bo/",
+        logo: ImagenesApp.imgUnifranz
       },
       {
         nombre: "UNITEPC (Universidad Técnica Pv. Cosmos)",
         enlace: "https://unitepc.edu.bo/",
+        logo: ImagenesApp.imgUnitepc
       },
       {
         nombre: "ULAT (Universidad Latinoamericana)",
         enlace: "http://www.ulat.edu.bo/",
+        logo: ImagenesApp.imgUlat
       },
       {
         nombre: "Universidad Salesiana",
         enlace: "https://www.usalesiana.edu.bo/principal/es",
+        logo: ImagenesApp.imgUniversidadSelesiana
       },
       {
         nombre: "UPAL (Universidad Privada Abierta Latinoamericana)",
         enlace: "https://upal.edu.bo/",
+        logo: ImagenesApp.imgUpal
       },
       {
         nombre: "ESFM (Escuela Superior de Formación de Maestros)",
         enlace: "https://esfmsimonrodriguez.edu.bo/",
+        logo: ImagenesApp.imgEsfm
       },
     ],
   },
   {
     idCar: 108,
-    imgSrc: ImagenesApp.imgElectromecanica,
-    titulo: "Ingenieria Electromecánica",
-    descripcion:
-      "Se encarga del diseño, construcción y mantenimiento de sistemas e  instalaciones industriales. Además, del desarrollo de dispositivos y mecanismos de áreas como la automatización, robótica y supervisión de equipos.",
-    area: "ÁREA TECNOLÓGICA",
-    lugaresDeTrabajo: [
-      "Diseño de construcción, montaje, operación y mantenimiento de equipos e instalaciones de equipos y maquinaria",
-      "Como director y consultor tanto de empresas o grupos de trabajo",
-      "Industria textil",
-      "Industria de Hidrocarburos",
-      "Industrias en general",
-    ],
-    materias: [
-      "Matemáticas",
-      "Dibujo técnico",
-      "Ciencia de los materiales",
-      "Química básica",
-      "Electrotecnia",
-      "Cálculo",
-      "Álgebra",
-      "Física básica",
-    ],
-    universidades: [
-      {
-        nombre: "USIP",
-        enlace: "https://usip.edu.bo/",
-      },
-      {
-        nombre: "UPB",
-        enlace: "https://www.upb.edu/",
-      },
-      {
-        nombre: "Univalle",
-        enlace: "https://www.univalle.edu/",
-      },
-      {
-        nombre: "UMSS",
-        enlace: "https://www.umss.edu.bo/",
-      },
-    ],
-  },
-  {
-    idCar: 109,
     imgSrc: ImagenesApp.imgCivil,
     titulo: "Ingeniería Civil",
     descripcion:
@@ -543,6 +522,50 @@ const servicios = [
     ],
   },
   {
+    idCar: 109,
+    imgSrc: ImagenesApp.imgElectromecanica,
+    titulo: "Ingenieria Electromecánica",
+    descripcion:
+      "Se encarga del diseño, construcción y mantenimiento de sistemas e  instalaciones industriales. Además, del desarrollo de dispositivos y mecanismos de áreas como la automatización, robótica y supervisión de equipos.",
+    area: "ÁREA TECNOLÓGICA",
+    lugaresDeTrabajo: [
+      "Diseño de construcción, montaje, operación y mantenimiento de equipos e instalaciones de equipos y maquinaria",
+      "Como director y consultor tanto de empresas o grupos de trabajo",
+      "Industria textil",
+      "Industria de Hidrocarburos",
+      "Industrias en general",
+    ],
+    materias: [
+      "Matemáticas",
+      "Dibujo técnico",
+      "Ciencia de los materiales",
+      "Química básica",
+      "Electrotecnia",
+      "Cálculo",
+      "Álgebra",
+      "Física básica",
+    ],
+    universidades: [
+      {
+        nombre: "USIP",
+        enlace: "https://usip.edu.bo/",
+      },
+      {
+        nombre: "UPB",
+        enlace: "https://www.upb.edu/",
+      },
+      {
+        nombre: "Univalle",
+        enlace: "https://www.univalle.edu/",
+      },
+      {
+        nombre: "UMSS",
+        enlace: "https://www.umss.edu.bo/",
+      },
+    ],
+  },
+  
+  {
     idCar: 110,
     imgSrc: ImagenesApp.imgElectronica,
     titulo: "Ingeniería Electrónica",
@@ -566,18 +589,22 @@ const servicios = [
       {
         nombre: "Univalle",
         enlace: "https://www.univalle.edu/",
+        logo: ImagenesApp.imgUnivalle
       },
       {
         nombre: "UNITEPC",
         enlace: "https://unitepc.edu.bo/",
+        logo: ImagenesApp.imgUnitepc
       },
       {
         nombre: "UMSS",
         enlace: "https://www.umss.edu.bo/",
+        logo: ImagenesApp.imgEscudo
       },
       {
         nombre: "UPB",
         enlace: "https://www.upb.edu/",
+        logo: ImagenesApp.imgUPB
       },
     ],
   },
@@ -860,51 +887,6 @@ const servicios = [
   },
   {
     idCar: 118,
-    imgSrc: ImagenesApp.imgEconomia,
-    titulo: "Economía",
-    descripcion:
-      "Se encarga del estudio sistemático de los fenómenos económicos locales e internacionales, incluyendo las dimensiones históricas y regionales, sin abandonar el aspecto social.",
-    area: "ÁREA ECONÓMICA",
-    lugaresDeTrabajo: [
-      "El sector privado: Instituciones financieras, Empresas, Comercio",
-      "El sector público: Instituciones del Gobierno Central, de Gobiernos Locales, Aduanas",
-      "Centros de investigación para el diseño y evaluación de política económica y social",
-      "Organismos internacionales y ONGs",
-      "Consultorías en sector privado o estatal",
-      "Formulación de estrategias y planificación de desarrollo nacional, regional, urbano, local, agrario y ambiental.",
-      "Investigación económica",
-      "Docente universitario",
-      "Innovación y creación de empresas",
-    ],
-    materias: [
-      "Economía general y política",
-      "Taller de lenguaje y Redacción",
-      "Álgebra",
-      "Cálculo",
-      "Sociología económica",
-      "Historia económica de América Latina",
-    ],
-    universidades: [
-      {
-        nombre: "UPB",
-        enlace: "https://www.upb.edu/",
-      },
-      {
-        nombre: "UNIFRANZ",
-        enlace: "https://unifranz.edu.bo/",
-      },
-      {
-        nombre: "UNITEPC",
-        enlace: "https://unitepc.edu.bo/",
-      },
-      {
-        nombre: "UMSS",
-        enlace: "https://www.umss.edu.bo/",
-      },
-    ],
-  },
-  {
-    idCar: 119,
     imgSrc: ImagenesApp.imgAdministracion,
     titulo: "Administración de Empresas",
     descripcion:
@@ -977,6 +959,52 @@ const servicios = [
       },
     ],
   },
+  {
+    idCar: 119,
+    imgSrc: ImagenesApp.imgEconomia,
+    titulo: "Economía",
+    descripcion:
+      "Se encarga del estudio sistemático de los fenómenos económicos locales e internacionales, incluyendo las dimensiones históricas y regionales, sin abandonar el aspecto social.",
+    area: "ÁREA ECONÓMICA",
+    lugaresDeTrabajo: [
+      "El sector privado: Instituciones financieras, Empresas, Comercio",
+      "El sector público: Instituciones del Gobierno Central, de Gobiernos Locales, Aduanas",
+      "Centros de investigación para el diseño y evaluación de política económica y social",
+      "Organismos internacionales y ONGs",
+      "Consultorías en sector privado o estatal",
+      "Formulación de estrategias y planificación de desarrollo nacional, regional, urbano, local, agrario y ambiental.",
+      "Investigación económica",
+      "Docente universitario",
+      "Innovación y creación de empresas",
+    ],
+    materias: [
+      "Economía general y política",
+      "Taller de lenguaje y Redacción",
+      "Álgebra",
+      "Cálculo",
+      "Sociología económica",
+      "Historia económica de América Latina",
+    ],
+    universidades: [
+      {
+        nombre: "UPB",
+        enlace: "https://www.upb.edu/",
+      },
+      {
+        nombre: "UNIFRANZ",
+        enlace: "https://unifranz.edu.bo/",
+      },
+      {
+        nombre: "UNITEPC",
+        enlace: "https://unitepc.edu.bo/",
+      },
+      {
+        nombre: "UMSS",
+        enlace: "https://www.umss.edu.bo/",
+      },
+    ],
+  },
+  
   {
     idCar: 120,
     imgSrc: ImagenesApp.imgComercial,

@@ -27,7 +27,7 @@ export const PieDePagina = () => {
                         <h3>Noticias</h3>
                         <p>Envianos tus novedades</p>
                         <input type="email" placeholder="Envia un comentario" />
-                        <input type="submit" className="btnF" value="Suscribirse" />
+                        <input type="submit" className="btnF" value="ENVIAR" />
                     </div>
                 </div>
             </div>

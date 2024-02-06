@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CarreraApp from "./CarreraApp";
+import './EstilosCar.css'
 
 const Carrera = () => {
   const areas = {};
@@ -14,14 +15,12 @@ const Carrera = () => {
     areas[carrera.area].push(carrera);
   });
 
-  // Agregar una carrera de cada área
   for (const area in areas) {
     if (areas[area].length > 0) {
       carrerasToShow.push(areas[area].shift());
     }
   }
 
-  // Agregar carreras adicionales hasta llegar a 9
   while (carrerasToShow.length < 9) {
     for (const area in areas) {
       if (areas[area].length > 0 && carrerasToShow.length < 9) {
@@ -43,7 +42,6 @@ const Carrera = () => {
                 </figure>
                 <div className="contenido-card">
                   <h3>{carrera.titulo}</h3>
-                  <p>{carrera.descripcion}</p>
                   <Link to={`/carrera/${carrera.idCar}`}>Leer Más</Link>
                 </div>
               </div>

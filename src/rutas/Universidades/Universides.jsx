@@ -1,8 +1,8 @@
 import React from "react";
 import "./universidades.css";
-import ImagenesApp from "../assets/ImagenesApp";
+import ImagenesApp from "../../../src/assets/ImagenesApp";
 import universidadesData from "./UniversidadesApp";
-import ScrollToTop from "./Componentes/Scrooll";
+import ScrollToTop from "../Componentes/Scrooll";
 
 
 const Universidades = () => {

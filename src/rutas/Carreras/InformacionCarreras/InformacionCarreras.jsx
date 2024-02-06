@@ -71,8 +71,13 @@ const InformacionCarreras = () => {
                         {carreraSelect.universidades.map((universidad, index) => (
                             <a
                                 key={index}
-                                href={universidad.enlace} target="blank">
-                                -{universidad.nombre}
+                                href={universidad.enlace}
+                                target="blank">
+                                <img
+                                    className="imgCarL"
+                                    src={universidad.logo}
+                                />
+                                {universidad.nombre}
                             </a>
                         ))}
                     </div>
