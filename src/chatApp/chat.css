@@ -5,13 +5,13 @@
   bottom: 20px; 
   margin: 30px;
   z-index: 1000;
-  max-width: 500px;
+  width: 500px;
   max-height: 70vh;
 }
 
 .chat-container {
     
-    max-height: 50vh;
+    height: 70vh;
     margin: 0;
     padding: 20px;
     background-color: #343631;
@@ -119,7 +119,7 @@
   }
   
   .expanded {
-    transform: translateY(83%); 
+    transform: translateY(88%); 
   }
   
   .chat-container {

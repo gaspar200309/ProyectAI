@@ -1,3 +1,4 @@
+import csv
 import openai
 from flask import Flask, render_template, send_from_directory, request, jsonify
 from flask_cors import CORS
@@ -8,16 +9,19 @@ CORS(app, resources={r"/user_input": {"origins": "*"}, r"/chat_history": {"origi
 openai.api_key = "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"
 
 system_message = """
-Eres un asistente virtual de la Universidad Mayor de San Simón. \
-Los estudiantes te harán preguntas sobre la universidad y debes responder en base a la \
-información que ahora te proporcionamos \
+Eres un asistente virtual de Cochabamba\
+Los estudiantes te haran preguntas sobre todas las carreras, universidades, institutos que hay en la ciudad.\
+en base a la informacion que le proporcionaremos\
+Si te preguntan algo que no este relacionado con el estudio respondele que solo eres asistente de la umss\
 
-Año de fundación: 1832 \
-es una universidad pública de Bolivia \
-tiene 16 facultades \
-tiene 45 carreras \
-se debe rendir un examen para ingresar \
-también es posible a través de un curso preuniversitario
+Medicina, Odontología, Enfermería, Fisioterapia y Kinesiología, Bioquímica y Farmacia, Nutrición y Dietética,\
+Ingeniería de Sistemas, Ingeniería Electromecánica, Ingeniería Civil, Ingeniería Electrónica, Ingeniería de Alimentos,\
+Ingeniería Industrial, Ingeniería Eléctrica, Ingeniería Mecánica, Ingeniería Informática, Ingeniería de Telecomunicaciones,\
+Contaduría Pública, Economía, Administración de Empresas, Ingeniería Comercial, Ingeniería Financiera, Derecho,\
+Comunicación Social, Psicología, Ciencias de la Educación, Lingüística, Trabajo Social, Sociología, Antropología,\
+Arquitectura, Diseño de Interiores, Turismo, Gastronomía, Diseño Gráfico, Veterinaria y Zootecnia, Ingeniería Ambiental,\
+Ingeniería Agronómica, Ingeniería Agrícola, Ingeniería Forestal, Ingeniería Agroindustrial, Ingeniería Petrolera\
+y vas mensionar a que area pertence y de que trata
 """
 
 chat_history = []
@@ -34,8 +38,8 @@ def resources(path):
 def user_input():
     user_input = request.json['input']
 
-    if user_input == "exit":
-        return jsonify({'response': 'Goodbye!'})
+    if not chat_history:
+        chat_history.append({"role": "system", "content": system_message})
 
     chat_history.append({"role": "user", "content": user_input})
 

@@ -1,0 +1,14 @@
+assistant: ¡Hola! ¿En qué puedo ayudarte hoy?
+user: Hola, necesito reservar una mesa para dos personas en un restaurante para esta noche a las 8:00 p.m.
+-
+assistant: ¡Por supuesto! ¿Tienes alguna preferencia en cuanto al tipo de cocina o ubicación del restaurante?
+user: Preferiría un restaurante de cocina italiana y que esté cerca del centro de la ciudad.
+-
+assistant: Entiendo. Déjame buscar algunos restaurantes italianos cercanos al centro para esa hora. ¿Tienes alguna otra preferencia, como un ambiente tranquilo o alguna restricción dietética?
+user: No, no tengo ninguna restricción en particular. Solo quiero asegurarme de que sea un lugar acogedor.
+-
+assistant: Perfecto, tendré en cuenta eso al buscar. ¿Alguna preferencia en cuanto al presupuesto?
+user: Preferiría que no sea demasiado caro, pero estoy dispuesto a pagar un precio razonable por una buena comida.
+-
+user: Estoy dispuesto a gastar entre $25 y $30
+assistant: Entendido. Voy a buscar opciones que se ajusten a tus preferencias y te daré algunas recomendaciones en breve.

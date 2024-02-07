@@ -11,14 +11,17 @@ function Chat() {
   const [chatHistory, setChatHistory] = useState([]);
   const [expanded, setExpanded] = useState(false);
 
+  const urlHystory = 'http://192.168.1.3:8000/chat_history'
+  const urlInput = 'http://192.168.1.3:8000/user_input'
+
 
   const fetchChatHistory = async () => {
     try {
-      const response = await axios.get("http://192.168.1.3:8000/chat_history");
+      const response = await axios.get(urlHystory);
       const history = response.data.history;
       setChatHistory(history);
     } catch (error) {
-      console.error("Error al obtener el historial del chat:", error);
+      console.error(error);
     }
   };
 
@@ -26,14 +29,12 @@ function Chat() {
     if (input === "exit") {
       return;
     }
-
     try {
-      await axios.post("http://192.168.1.3:8000/user_input", { input });
+      await axios.post(urlInput, { input });
       setInput("");
-     
       fetchChatHistory();
     } catch (error) {
-      console.error("Error al enviar el mensaje del usuario:", error);
+      console.error(error);
       alert("Hubo un problema al enviar el mensaje. Por favor, inténtalo nuevamente.");
     }
   };
