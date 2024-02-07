@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 import { MdMessage } from "react-icons/md";
@@ -11,28 +11,21 @@ function Chat() {
   const [chatHistory, setChatHistory] = useState([]);
   const [expanded, setExpanded] = useState(false);
 
-  const urlHystory = 'http://192.168.1.3:8000/chat_history'
   const urlInput = 'http://192.168.1.3:8000/user_input'
-
-
-  const fetchChatHistory = async () => {
-    try {
-      const response = await axios.get(urlHystory);
-      const history = response.data.history;
-      setChatHistory(history);
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   const handleUserInput = async () => {
     if (input === "exit") {
       return;
     }
     try {
-      await axios.post(urlInput, { input });
+      const response = await axios.post(urlInput, { input });
+      const responseData = response.data;
+      const newChatHistory = [...chatHistory, { role: "user", content: input }];
+      if (responseData && responseData.response) {
+        newChatHistory.push({ role: "system", content: responseData.response });
+      }
+      setChatHistory(newChatHistory);
       setInput("");
-      fetchChatHistory();
     } catch (error) {
       console.error(error);
       alert("Hubo un problema al enviar el mensaje. Por favor, inténtalo nuevamente.");
@@ -42,10 +35,6 @@ function Chat() {
   const toggleChat = () => {
     setExpanded(!expanded);
   };
-
-  useEffect(() => {
-    fetchChatHistory();
-  }, [expanded]);
 
   return (
     <div className={`container ${expanded ? 'expanded' : ''}`}>
@@ -58,21 +47,19 @@ function Chat() {
       </div>
       {expanded && (
         <>
-        <div className="chat-header">
+          <div className="chat-header">
             <h2>Chat Bot</h2>
           </div>
-        <div className="chat-container">
-          
-          <div className="chat-history">
-            {chatHistory.map((message, index) => (
-              <div key={index} className={`message ${message.role}`}>
-                {message.content}
-              </div>
-            ))}
+          <div className="chat-container">
+            <div className="chat-history">
+              {chatHistory.map((message, index) => (
+                <div key={index} className={`message ${message.role}`}>
+                  {message.content}
+                </div>
+              ))}
+            </div>
           </div>
-          
-        </div>
-        <div className="chat-input">
+          <div className="chat-input">
             <input
               type="text"
               value={input}

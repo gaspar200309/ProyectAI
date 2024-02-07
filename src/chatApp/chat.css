@@ -39,6 +39,10 @@
     margin: 8px;
     padding: 10px;
     border-radius: 8px;
+    color: #fff;
+    background-color: #b67a4a;
+    align-self: flex-start;
+    border-radius: 0 10px 12px 10px; 
   }
   
   .user {
