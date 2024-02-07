@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, resources={r"/user_input": {"origins": "*"}, r"/chat_history": {"origins": "*"}})
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 system_message = """
 Eres un asistente virtual de Cochabamba\
@@ -22,6 +22,53 @@ Comunicación Social, Psicología, Ciencias de la Educación, Lingüística, Tra
 Arquitectura, Diseño de Interiores, Turismo, Gastronomía, Diseño Gráfico, Veterinaria y Zootecnia, Ingeniería Ambiental,\
 Ingeniería Agronómica, Ingeniería Agrícola, Ingeniería Forestal, Ingeniería Agroindustrial, Ingeniería Petrolera\
 y vas mensionar a que area pertence y de que trata
+
+Univerisidades de cochabamba son:\
+Pública:\
+UMSS (Universidad Maypr de San Simón)\
+Privadas: \
+EMI (Escuela militar de ingeniería),\
+USIP (Universidad Simón I. Patiño),\
+Unicen,\
+UPB (Universidad Privada Boliviana),\
+UCB (Universidad Catolica Boliviana),\
+UCATEC (Univ. Pv. de Cs. Administrativas y Tecnológicas)\
+UPDS (Universidad Privada Domingo Savio),\
+UDABOL (Universidad de Aquino de Bolivia),\
+UNIVALLE (Universidad Privada del Valle),\
+UNIFRANZ (Universidad Franz Tamayo),\
+UNITEPC (Universidad Técnica Pv. Cosmos),\
+ULAT (Universidad Latinoamericana),\
+Universidad Salesiana,\
+UPAL (Universidad Privada Abierta Latinoamericana) ,\
+Normal:\
+ESFM (Escuela cuperior de formación de maestros)\
+Publica\
+Instituto Tecnológico Sayarinapaj\
+Instituto Tecnológico Ivan Canelas\
+Instituto tecnológico Maria Cristina\
+Instituto tecnológico Padre Antonio Berta\
+Instituto tecnológico Nuestra señora del Pilar\
+Instituto Tecnico nacional de comercio "Alvarez Plata" Nocturno\
+Instituto Tecnico nacional de comercio "Alvarez Plata" Diurno\
+Insituto técnico nacional de comercio\
+Instituto técnico superior de comercio y administración ESAE\
+Instituto tecnológico boliviano canadiense El Paso\
+Insituto Técnico Sacaba\
+Instituto tecnológico "Amor misericordioso" CETAM\
+Instituto tecnológico industrial comercial Puerto Mejillones\
+Instituto Tecnológico Agropecuario Industrial Tarata - ITAIT\
+Escuela Técnica de Saluud Boliviano Japonesa de Cooperación Andina\
+
+Privadas:\
+Intituto Profesional San Ignacio\
+Instituto técnico ITSAL\
+Instituto Tecnologico Mundial\
+Instituto Técnico Nacional Ándres Bello\
+Instituto Técnico Britanico Mercantil (IBM)\
+Instituto Técnico Ignacia Zeballos\
+Instituto Tecnologíco del Sur\
+INFOCAL\
 """
 
 chat_history = []

@@ -1,12 +1,13 @@
 import gradio as gr
 import openai
+import os
 import csv
 import pandas as pd 
 
 from openai.embeddings_utils import get_embedding
 from openai.embeddings_utils import cosine_similarity
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 def embed_text(path="texto.csv"):
     conocimiento_df = pd.read_csv(path, encoding='latin1')
@@ -20,7 +21,10 @@ def buscar(busqueda, datos, n_resultados=5):
     datos = datos.sort_values("Similitud", ascending=False)
     return datos.iloc[:n_resultados][["texto", "Similitud", "Embedding"]]
 
-with open ('chatbot.csv') as f:
+dir_path = os.path.dirname(os.path.realpath(__file__))
+file_path = os.path.join(dir_path, 'chatbot.csv')
+
+with open(file_path) as f:
     reader = csv.reader(f)
     texto_emb = embed_text(f)
 
